@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Cristian Motta - Portafolio Personal </title>
+    <link rel="stylesheet" href="sytylep.css">
     <meta name="Descripcion" 
     content="protafolio personal de Cristian Motta. Desarrollador web en formacion HTML y CSS">
 </head>
@@ -31,7 +32,7 @@
                         <a href="#habilidades" class="nav__link">Habilidades</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#cantacto" class="nav__link">Contacto</a>
+                        <a href="#contacto" class="nav__link">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +43,6 @@
     <main class="main">
         <!---- Hero Section ----->
         <section class="hero" id="Inicio">
-            <div>
                 <h2 class="hero__title">!Hola¡ soy Cristian Motta</h2>
                 <p class="hero__subtitle">Desarrodor Web en Formacion</p>
                 <p class="hero__description">
@@ -70,16 +70,260 @@
                         <span class="stat__label">Tecnologias</span>
                     </div>
                 </div>
+        </section>
 
-                <!----Sobre Mì---->
-                <section class="about" id="sobre-mi">
-                    <div class="about__container">
-                        <h2 class="about__title"> Mi Viaje en el Dasrrollo web</h2>
+        <!----Sobre Mì---->
+        <section class="about" id="sobre-mi">
+            <div class="about__container">
+                <h2 class="about__title"> Mi Viaje en el Dasrrollo web</h2>
 
+                <p class="about__intro">
+                    soy <strong>Desarrollador web en formacion</strong>,
+                    actualmente aprendiendo HTML y CSS para crear sitios
+                    web hermosos y funcionales.
+                </p>
+
+                <p class="about__text">
+                    Me apasiona la tecnologia y el diseño. cada dia descubro
+                    nuevas formas de mejorar mis Habilidades y crear 
+                    mejores experiencias web.
+                </p>
+
+                <blockquote class="quote">
+                    <p class="quote__text">
+                       "El buen diseño es obvio. El gran diseño es transparante.
+                        Mi objetivo es crear sitios web que sean ambos: bellos
+                        y funcionales."
+                    </p>
+                </blockquote>
+
+                <div class="values">
+                    <h3 class="values__title">Mis valores</h3>
+                    <ul class="values__list">
+                        <li class="values__item">
+                            <span class="values__icon">🎯</span>
+                            <strong>Dedicacion</strong>
+                            <span>Comprometido con mi aprendizaje diarios</span>
+                        </li>
+                        <li class="values__item">
+                            <span class="values_icon">📚</span>
+                            <strong>Curiosidad</strong>
+                            <span>Siempre explorando nuevas tecnologias</span>
+                        </li>
+                        <li class="values__item">
+                            <span class="values_icon">🤝</span>
+                            <strong>Comunidad</strong>
+                            <span>Aprndiendo y compartiendo con otros</span>
+                        </li>
+                        <li class="values__item">
+                            <span class="values_icon">💡</span>
+                            <strong>Cretividad</strong>
+                            <span>Buscando solucione innovadoras</span>
+                        </li>
+                    </ul>
                     </div>
-                </section>
+                </div>
+            </section>
+
+            <!----Proyectos----->
+            <section class="project" id="proyectos">
+                <div class="project__container">
+                    <h2 class="project__title">Mis proyectos</h2>
+                    <p class="project__description">
+                        cada proyecto representa mi progreso aprendiendo desarrollo web.
+                        Desde páginas simples hasta este portafolio completo.
+                    </p>
+
+                    <div class="project__grid">
+                        <article class="project">
+                            <h3 class="project__title">Mi Primer Sitio Web</h3>
+                            <p class="project__description">
+                                Mi primer proyecto completo usando HTML y CSS. una pagina
+                                simple pero bien estructurada donde apliqué los conceptos
+                                basicos aprendidos.
+                            </p>
+
+                            <h4 class="project__subtitle">Lo que aprendí:</h4>
+                            <ul class="project__learnings">
+                                <li>Estructura semántica de HTML</li>
+                                <li>Box Model y layout básico</li>
+                                <li>Estilos CSS fundamentales</li>
+                                <li>Principios básicos de accesibilidad</li>
+                                <li>Introducción al diseño responsivo</li>
+                            </ul>
+
+                            <div class="project__technologies">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+
+                            <div class="project__links">
+                                <a href="#" class="project__link">Ver proyecto</a>
+                                <a href="#" class="project__link">Ver código</a>
+                            </div>
+                        </article>
+
+                        <article class="project project--featured">
+                            <span class="project__badge">Destacado</span>
+                            <p class="project__description">
+                                Este mismo portfolio que estas viendo. Mi proyecto más
+                                completo donde aplico todo lo aprendido en HTML Y CSS.
+                            </p>
+
+                            <h4 class="project__subtitle">Caracteristicas:</h4>
+                            <ul class="project_learnings">
+                                <li>HTML semántico y accesible</li>
+                                <li>CSS moderno y organizado</li>
+                                <li>Diseño responsivo</li>
+                                <li>Metodologia BEM</li>
+                                <li>Optimización de rendimiento</li>
+                            </ul>
+
+                            <div class="project__technologies">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">BEM</span>
+                            </div>
+
+                            <div class="project__links">
+                                <a href="#" class="project__links">Ver proyecto</a>
+                                <a href="#" class="project__links">Ver código</a>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <h3 class="project_title">Página de Blog</h3>
+                            <p class="project__description">
+                                Un blog simple donde practico la tipografia web y la
+                                organización de contenido. Enfocado en la legibilidad
+                                y la experiencia de lectura. 
+                            </p>
+
+                            <h4 class="project__subtitle">Enfoque:</h4>
+                            <ul class="project_learnings">
+                                <li>Tipografia legible</li>
+                                <li>Espaciado correcto</li>
+                                <li>Jerarquia visual</li>
+                                <li>Colores accesibles</li>
+                                <li>Layout de contenido</li>
+                            </ul>
+
+                            <div class="project__links">
+                                <a href="#" class="project__link">Ver proyecto</a>
+                                <a href="#" class="project__link">Ver código</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--- Habilidades -->
+            <section class="skills" id="habilidades">
+                <div class="skills__container">
+                    <h2 class="skills__title">Mis Habilidades</h2>
+
+                    <h3 class="skills__subtitle">Tecnologias que estoy aprendiendo</h3>
+
+                    <div class="skills_list">
+                        <div class="skill">
+                            <h4 class="skill_name">HMTL5 & Semántica</h4>
+                        <div class="skill__bar">
+                            <div class="skill__progess skill__progress--html"></div>
+                        </div>
+                            <span class="skill__percentage">75%</span>
+                    </div>
+
+                    <div class="skill">
+                        <h4 class="skill_name">CSS3 & Diseño</h4>
+                        <div class="skill__bar">
+                            <div class="skill__progess skill__progress--html"></div>
+                        </div>
+                            <span class="skill__percentage">60%</span>
+                    </div>
+
+                    <div class="skill">
+                        <h4 class="skill_name">JavaScript (Comenzando)</h4>
+                        <div class="skill__bar">
+                            <div class="skill__progess skill__progress--html"></div>
+                        </div>
+                            <span class="skill__percentage">20%</span>
+                        </div>
+                    </div>
+
+                    <div class="learning">
+                            <h3 class="learning__title">Actualmente aprendiendo:</h3>
+                        <ul class="learning__list">
+                            <li class="learning_item">Flexbox y Grid Layout</li>
+                            <li class="learning_item">Animaciones Css</li>
+                            <li class="learning_item">Diseñado Reponsive</li>
+                            <li class="learning_item">Accesibilidad Web</li>
+                            <li class="learning_item">Mejores prácticas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Contacto -->
+        <section class="contact" id="contacto">
+            <div class="contact__container">
+                <h2 class="contact__title">¿Te gustaria conectar?</h2>
+                <p class="contact__descripcion">
+                    Siempre estoy buscando aprender de otros desarrolladores,
+                    compartir experiencias y talvez colaborar en proyectos 
+                    interesantes.
+                </p>
+
+                <div class="contact__methods">
+                    <div class="contact__method">
+                    <h3 class="contact__method-title">📧 Email</h3>
+                    <a href="cdavidg4396@gmail.com" class="contact_link">
+                        cdavidg4396@gmail.com
+                    </a>
+                        </div>
+                </div>
+
+               <div class="contact_method">
+                    <h3 class="contact__method-title">💻 GitHub</h3>
+                    <a href="https://github.com/Cristianmotta" class="contact_link">
+                        @Cristianmotta
+                    </a>
+                </div>
+
+                <div class="contact_method">
+                    <h3 class="contact__method-title">💼 LinkedIn</h3>
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" class="contact_link">
+                        /in/Cristianmotta
+                    </a>
+                </div>
             </div>
+
+            <a href="" class="button button--primary button--large">
+                📄 Descargar CV (PDF)
+            </a>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__nav">
+                <a href="#inicio" class="footer__link">Inicio</a>
+                <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+                <a href="#proyectos" class="footer__link">Proyectos</a>
+                <a href="#habilidades" class="footer__link">Habilidades</a>
+                <a href="#contacto" class="footer__link">Contacto</a>
+            </nav>
+
+            <p class="footer_copyright">
+                © 2025 Cristian Motta - Portafolio Personal
+            </p>
+
+            <p class="footer__credits">
+                Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
+            </p>
+        </div>
+    </footer>
 </body>
+
+
 </html>
