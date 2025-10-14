@@ -340,3 +340,108 @@ tr:nth-child(even) {
     background-color: rgba(231, 76, 60, 0.25);
 }
 
+/* Modificar */
+:root{
+    ---color-primary: #3498db;
+    ---color-secondary: #2ecc71;
+    ---color-denger: #e74c3c;
+    ---color-dark: #2c3e50;
+    ---color-light: #ecf0f3;
+    ---space: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: var(---color-primary);
+}
+
+.btn-secundary{
+    background: var(---color-secondary);
+}
+
+.btn-danger{
+    background: var(---color-denger);
+}
+
+.card{
+    background: var(---color-light);
+    color: var(---color-dark);
+    padding: var(---space);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.card-dark{
+    ---color-light: blue;
+    ---color-dark: white;
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+
+.linear-simple{
+    background: linear-gradient(#3498db, #9b59b6);
+}
+
+.linear-direction{
+    background: linear-gradient(to right, #e74c3c, #f39c12);
+}
+
+.linear-diagonal{
+    background: linear-gradient(to bottom right, #2ecc71, #3498db);
+}
+
+.radial-simple{
+    background: radial-gradient(circle, #f39c12, #e74c33);
+}
+
+.radial-position{
+    background: radial-gradient(at top left, #9b59b6, #3498db);
+}
+
+.multiple{
+    background: linear-gradient(to right, red, orange, yellow, green, blue);
+}
+
+/* Shadow  sombras y dordes*/
+
+div, p{
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    min-width: 100px;
+    text-align: center;
+}
+
+.shadow-simple{
+    box-shadow: 5px 5px #888;
+}
+
+.shadow-inset{
+    box-shadow: inset 0 0 10px #888;
+}
+
+.text-shadow{
+    text-shadow: 2px 2px 5px #888;
+}
+
+.radius-small {
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
