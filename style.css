@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color-primary-hover: #b5d8ec ;
+     --color-secundary-hover: #087662 ;
+    --color-primary: #7bb2d2;
+    --secundary-color: #1a4c43;
+    --body-color: #1e3c72;
+    --body-color-2: #2a5298;
+}
+
+body{
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    background: linear-gradient(var(--body-color), var(--body-color-2));
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+p{
+    margin-bottom: 9px;
+    text-align: center;
+    font-size: medium;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.item{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+
+.item-2{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin: 4px;
+    border-radius: 3px;
+
+}
+
+.item:hover{
+    background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
+    transform: scale(1.2);
+}
+
+.item-2:hover{
+     background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(52, 50, 50);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+
+.item, .item-2{
+    background: linear-gradient(var(--color-primary), var(--secundary-color));
+}
+
+
+
+@keyframes bajada {
+  0% {
+    transform: translateY(-100px); /* empieza arriba */
+    opacity: 0; /* invisible al inicio */
+  }
+  100% {
+    transform: translateY(0); /* termina en su posición normal */
+    opacity: 1; /* visible */
+  }
+
+}
+
+.item-2{
+  animation: bajada 1.5s ease-out;
+}
+
+.item{
+    animation: bajada 1.5s ease-out ;
+}

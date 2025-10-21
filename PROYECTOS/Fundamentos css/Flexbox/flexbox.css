@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 100px;
+    min-height: 100px;
+}
+
+.item{
+    background: #3498bd;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+.colum{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+}
+
+.align {
+    align-items: center;
+}
+
+/*
+
+Flexbox avanzado
+.container {
+    display: flex;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 100px;
+    min-height: 100px;
+}
+    .item{
+    background: #3498bd;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    }
+
+    el text-aling: center; centar el contenido de nuestro contenedor
+*/ 
+
+.grow{
+    flex-grow: 2;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2; 
+}
+
+.self-start{
+    align-self: flex-start;
+}
+
+.self-end{
+    align-self: flex-end;
+}
