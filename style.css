@@ -36,11 +36,14 @@ p{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1f 1fr;
     cursor: pointer;
     transition: 1s;
 }
 
+.seccion_portafolio{
+    margin-top: 3rem;
+}
 
 .container-2{
     display: grid;
@@ -51,11 +54,11 @@ p{
 
 
 .item{
-    color: white;
     padding: 20px;
+    height: 150px;
     text-align: center;
-    margin: 3px;
-    border-radius: 3px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 
@@ -70,19 +73,34 @@ p{
 
 .item:hover{
     background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .item-2:hover{
-     background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
+    background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
     transform: scale(1.2);
 }
 
 a{
     text-decoration: none;
-    color: rgb(52, 50, 50);
+    padding: 10rem;
+    height: 30rem;
+    width: 30rem;
+}
+
+.link_nombre{
+    color: white;
     font-family: "Libre Baskerville", serif;
-    font-weight: 400;
+    font-weight: 500px;
+    text-align: left;
+}
+
+.descripcion{
+    text-decoration: none;
+    color: black;
+    margin-right: 0px;
+    flex-direction: column;
+    text-align: left;
 }
 
 .item, .item-2{
@@ -109,4 +127,92 @@ a{
 
 .item{
     animation: bajada 1.5s ease-out ;
+}
+
+
+@media (min-width: 725px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .item{
+        padding: 80px;
+        height: 180px;
+        text-align: center;
+        margin: 60px;
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 10rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .link_nombre{
+        color: white;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 500px;
+        text-align: left;
+
+    }
+
+    .descripcion{
+        text-decoration: none;
+        color: black;
+        margin-right: 0px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+
+
+@media (min-width: 644px){
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .item{
+        padding: 40px;
+        height: 199px;
+        text-align: center;
+        margin: 40px;
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 10rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .link_nombre{
+        color: white;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 500px;
+        text-align: left;
+
+    }
+
+    .descripcion{
+        text-decoration: none;
+        color: black;
+        margin-right: 0px;
+        flex-direction: column;
+        text-align: left;
+    }
+
+
+
 }

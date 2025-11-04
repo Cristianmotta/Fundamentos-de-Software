@@ -476,14 +476,14 @@ ul{
 }
 
 .skill__bar{
-    background-color: #bbb3b3;
+    background-color: #ddb5b5;
     height: 24px;
     position: relative;
     margin-bottom: 8px;
 }
 
 .skill__progress{
-    background-color: #6fb7de;
+    background: #6fb7de;
     height: 100%;
     position: absolute;
     top: 0;
@@ -503,7 +503,7 @@ ul{
 }
 
 .skill__percentage {
-    color: #666666;
+    color: #a3a2a2;
     font-size: 14px;
 }
 
