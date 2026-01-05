@@ -6,12 +6,15 @@
 }
 
 :root{
-    --color-primary-hover: #b5d8ec ;
-     --color-secundary-hover: #087662 ;
+    --color-primary-hover: #556269 ;
+    --color-secundary-hover: #a8afae63 ;
     --color-primary: #7bb2d2;
-    --secundary-color: #1a4c43;
-    --body-color: #1e3c72;
-    --body-color-2: #2a5298;
+    --secundary-color: #62709D;
+    --body-color: #C5CADB;
+    --body-color-2: #62709D;
+    --neon-color-1: white;
+    --neon-color-2: rgb(130, 128, 128);
+    --neon-color-3: rgb(3, 3, 3);
 }
 
 
@@ -27,6 +30,13 @@ h1{
     text-align: center;
     margin-bottom: 20px;
     margin: 20px;
+    color: #292e31;
+
+    text-shadow: 
+    8px 11px 20px rgba(5, 203, 234, 0.607),
+    0px 19px  10px #b5d8ec,
+    0px 2px 5px  #C5CADB; 
+
 }
 
 p{
@@ -59,11 +69,11 @@ p{
     text-align: center;
     margin: 20px;
     border-radius: 10px;
+
 }
 
 
 .direccion_column{
-
     display: flex;
     padding: 1px;
     min-height: 50px;
@@ -97,6 +107,11 @@ p{
 
 .item:hover{
     background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
+
+    box-shadow:
+    0 0 10px var(--neon-color-1),
+    0 0 20px var(--neon-color-2),
+    0 0 40px var(--neon-color-3);
 }
 
 .item-2:hover{
@@ -139,6 +154,7 @@ a{
 
 .item, .item-2{
     background: linear-gradient(var(--color-primary), var(--secundary-color));
+    
 }
 
 
