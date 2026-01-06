@@ -33,6 +33,22 @@
     transform: rotate(45deg);
 }
 
+.rotate-90:hover{
+    transform: rotate(90deg);
+}
+
+.rotate-180:hover{
+    transform: rotate(180deg);
+}
+
 .scale-small:hover{
     transform: scale(0.5);
+}
+
+.scale-large:hover{
+    transform: scale(1.5);
+}
+
+.scale-x:hover{
+    transform: scale(2.0);
 }

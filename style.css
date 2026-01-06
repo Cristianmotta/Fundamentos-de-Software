@@ -68,8 +68,18 @@ p{
     padding: 10px;
     text-align: center;
     margin: 20px;
-    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition:  transform 0.3s ease, box-shadow 0.3s, border-color 3.0s ease;
+}
 
+.item:hover h3{
+    transform: translateX(19px);
+    color:#C5CADB
+}
+
+.item:hover p{
+    transform: translateX(10px);
 }
 
 
@@ -107,7 +117,7 @@ p{
 
 .item:hover{
     background: linear-gradient(var(--color-primary-hover), var(--color-secundary-hover));
-
+    transform: translateY(-10px);
     box-shadow:
     0 0 10px var(--neon-color-1),
     0 0 20px var(--neon-color-2),
@@ -144,12 +154,17 @@ a{
     margin-top: 10px;
 }
 
-.descripcion{
+.descripcion {
     text-decoration: none;
     color: black;
     margin-right: 0px;
     flex-direction: column;
     text-align: left;
+}
+
+
+.descripcion:hover p{
+   transform:  translateX(10px);
 }
 
 .item, .item-2{
@@ -180,7 +195,7 @@ a{
 }
 
 
-@media (min-width: 725px){
+@media (min-width: 1225px){
 
     .container{
         display: grid;
