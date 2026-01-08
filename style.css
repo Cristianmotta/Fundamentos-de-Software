@@ -46,8 +46,13 @@ p{
 }
 
 .container{
+    width: 100%;
+    max-width: 1300px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 1f 1fr;
+    grid-template-columns: 4fr 4f 4fr;
     cursor: pointer;
     transition: 1s;
 }
@@ -65,7 +70,10 @@ p{
 
 
 .item{
-    padding: 10px;
+    width: 88%;
+    padding: 09px;
+    max-width: 2000px;
+    min-width: 495px;
     text-align: center;
     margin: 20px;
     border: 2px solid white;
@@ -109,10 +117,11 @@ p{
 
 
 .gif{
-    margin: 10px;
-    height: 15rem;
-    width: 30rem;
+    margin: 0 auto;
+    height: 16rem;
+    width: 91%;
     border-radius: 3px;
+    margin-top: 10px;
 }
 
 .item:hover{
@@ -195,7 +204,7 @@ a{
 }
 
 
-@media (min-width: 1225px){
+@media (min-width: 1325px){
 
     .container{
         display: grid;
@@ -205,10 +214,14 @@ a{
     }
 
     .item{
-        padding: 1px;
+        width: 90%;
+        padding: 10px;
+        max-width: 10000px;
+        min-width: 325px;
         text-align: center;
-        margin: 10px;
-        border-radius: 10px;
+        margin: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
     }
     
     
@@ -260,10 +273,14 @@ a{
     }
 
     .item{
-        padding: 20px;
+        width: 88%;
+        padding: 09px;
+        max-width: 1000px;
+        min-width: 495px;
         text-align: center;
-        margin: 40px;
-        border-radius: 10px;
+        margin: 20px;
+        border: 2px solid white;
+        border-radius: 20px;
     }
 
     a{
