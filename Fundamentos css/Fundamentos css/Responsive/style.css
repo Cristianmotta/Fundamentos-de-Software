@@ -85,12 +85,12 @@
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1014px){
     .tablet{
         display: none;
     }
 
-    .dextop{
+    p{
         display: block;
         background: green;
         color: white;
