@@ -60,13 +60,8 @@ strong{
 /* 3. Enlaces */
 
 a{
-    color: #487667;
+    color: #041b13;
     text-decoration: none;
-}
-
-a:hover{
-    color: #2b6568;
-    text-decoration: underline;
 }
 
 a:active{
@@ -535,10 +530,7 @@ ul{
     background-color: #595a5b;
 }
 
-.contact:hover{
-    cursor: pointer;
-    background-color: #000000
-}
+
 .contact__container{
     max-width: 800px;
     margin: 0 auto;
@@ -555,10 +547,23 @@ ul{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .contact__methods{
-    margin-bottom: 48px;
+    padding: 50px;
+    transition-duration: 0.5s;
+    background: #3a3939;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.contact__methods:hover{
+    background: #0a0b0b;
+    margin: 20px;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 
 .contact__methods-title{
@@ -567,7 +572,7 @@ ul{
     color: #1a1a1a;
 }
 
-.contact__link{
+.contact_link{
     color: #515354;
     font-weight: 600;
 }
@@ -605,4 +610,18 @@ ul{
 .footer__credits{
     color: #9ca3af;
     font-size: 14px;
+}
+
+@media (min-width: 1014px){
+    .container-method{
+        display: flex;
+    }
+
+    .contact__methods{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+    }
+
 }

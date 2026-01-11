@@ -21,6 +21,19 @@
     margin: 0 auto;
 }
 
+.card{
+    background-color: #3dd;
+    width: 90%;
+    padding: 20px;
+    max-width: 1000px;
+    min-width: 20px;
+    border-radius: 12px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    color: beige;
+}
+
 .image-box{
     width: 100%;
     height: 200px;
